@@ -2,6 +2,7 @@ def call(Map config = [:]) {
     sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
     sh "echo uname -a"
     sh "df -h"
+    sh "top"
 }
 //def call() {
 //    sh "echo Hello World"
